@@ -5,7 +5,7 @@
 
 1.1 Sign in to AWS Management Console
 
-1.2 Choose the AWS CloudShell icon on the navigation bar
+1.2 Choose the AWS CloudShell icon <img src="https://github.com/t2yijaeho/Terraform-on-AWS-CloudShell/blob/main/images/AWS%20CloudShell.png?raw=true" width="16"> on the navigation bar
 
 1.3 Check AWS Command Line Interface (AWS CLI) version
 
