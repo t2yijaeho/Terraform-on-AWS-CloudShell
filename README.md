@@ -16,27 +16,34 @@ aws --version
 
 ## 2. Install Terraform
 
-2.1 Download Terraform Linux binary zip file
+2.1 Get latest Terraform version
 
 ```console
-wget https://releases.hashicorp.com/terraform/1.1.9/terraform_1.1.9_linux_amd64.zip
+LATEST_RELEASE=$(curl https://api.github.com/repos/hashicorp/terraform/releases/latest | jq --raw-output '.tag_name' | cut -c 2-)
+echo $LATEST_RELEASE
 ```
 
-2.2 Unzip binary file and remove zip file
+2.2 Download Terraform Linux binary zip file
 
 ```console
-unzip terraform_1.1.9_linux_amd64.zip
-rm terraform_1.1.9_linux_amd64.zip
+wget https://releases.hashicorp.com/terraform/${LATEST_RELEASE}/terraform_${LATEST_RELEASE}_linux_amd64.zip
 ```
 
-2.3 Make binary directory and move binary file
+2.3 Unzip binary file and remove zip file
+
+```console
+unzip terraform_${LATEST_RELEASE}_linux_amd64.zip
+rm terraform_${LATEST_RELEASE}_linux_amd64.zip
+```
+
+2.4 Make binary directory and move binary file
 
 ```console
 mkdir ~/bin
 mv terraform ~/bin
 ```
 
-2.4 Check Terraform version
+2.5 Check Terraform version
 
 ```console
 terraform version
