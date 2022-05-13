@@ -1,10 +1,18 @@
 # Terraform on AWS CloudShell
 
+
 ## 1. Launch AWS CloudShell
 
 1.1 Sign in to AWS Management Console
 
 1.2 Choose the AWS CloudShell icon on the navigation bar
+
+1.3 Check AWS Command Line Interface (AWS CLI) version
+
+```console
+aws --version
+```
+
 
 ## 2. Install Terraform
 
