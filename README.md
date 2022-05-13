@@ -3,48 +3,50 @@
 
 ## 1. Launch AWS CloudShell
 
-1.1 Sign in to AWS Management Console <img src="https://github.com/t2yijaeho/Terraform-on-AWS-CloudShell/blob/main/images/AWS%20Management%20Console.png?raw=true" width="16">
+1. Sign in to AWS Management Console <img src="https://github.com/t2yijaeho/Terraform-on-AWS-CloudShell/blob/main/images/AWS%20Management%20Console.png?raw=true" width="16">
 
-1.2 Choose the AWS CloudShell icon <img src="https://github.com/t2yijaeho/Terraform-on-AWS-CloudShell/blob/main/images/AWS%20CloudShell.png?raw=true" width="16"> on the navigation bar
+2. Choose the AWS CloudShell icon <img src="https://github.com/t2yijaeho/Terraform-on-AWS-CloudShell/blob/main/images/AWS%20CloudShell.png?raw=true" width="16"> on the navigation bar
 
-1.3 Check AWS Command Line Interface (AWS CLI) version
+3. Check AWS Command Line Interface (AWS CLI) version
 
-```console
-aws --version
-```
+    ```bash
+    aws --version
+    ```
+
+    <img src="https://github.com/t2yijaeho/Terraform-on-AWS-CloudShell/blob/main/images/AWS%20CloudShell%20version.png?raw=true">
 
 
 ## 2. Install Terraform
 
-2.1 Get latest Terraform version
+1. Get latest Terraform version
 
-```console
-LATEST_RELEASE=$(curl https://api.github.com/repos/hashicorp/terraform/releases/latest | jq --raw-output '.tag_name' | cut -c 2-)
-echo $LATEST_RELEASE
-```
+    ```console
+    LATEST_RELEASE=$(curl https://api.github.com/repos/hashicorp/terraform/releases/latest | jq --raw-output '.tag_name' | cut -c 2-)
+    echo $LATEST_RELEASE
+    ```
 
-2.2 Download Terraform Linux binary zip file
+2. Download Terraform Linux binary zip file
 
-```console
-wget https://releases.hashicorp.com/terraform/${LATEST_RELEASE}/terraform_${LATEST_RELEASE}_linux_amd64.zip
-```
+    ```console
+    wget https://releases.hashicorp.com/terraform/${LATEST_RELEASE}/terraform_${LATEST_RELEASE}_linux_amd64.zip
+    ```
 
-2.3 Unzip binary file and remove zip file
+3. Unzip binary file and remove zip file
 
-```console
-unzip terraform_${LATEST_RELEASE}_linux_amd64.zip
-rm terraform_${LATEST_RELEASE}_linux_amd64.zip
-```
+    ```console
+    unzip terraform_${LATEST_RELEASE}_linux_amd64.zip
+    rm terraform_${LATEST_RELEASE}_linux_amd64.zip
+    ```
 
-2.4 Make binary directory and move binary file
+4. Make binary directory and move binary file
 
-```console
-mkdir ~/bin
-mv terraform ~/bin
-```
+    ```console
+    mkdir ~/bin
+    mv terraform ~/bin
+    ```
 
-2.5 Check Terraform version
+5. Check Terraform version
 
-```console
-terraform version
-```
+    ```console
+    terraform version
+    ```
