@@ -36,18 +36,11 @@
 3. Unzip binary file and remove zip file
 
     ```console
-    unzip terraform_${LATEST_RELEASE}_linux_amd64.zip
+    unzip -d ./bin/ terraform_${LATEST_RELEASE}_linux_amd64.zip
     rm terraform_${LATEST_RELEASE}_linux_amd64.zip
     ```
 
-4. Make binary directory and move binary file
-
-    ```console
-    mkdir ~/bin
-    mv terraform ~/bin
-    ```
-
-5. Check Terraform version
+4. Check Terraform version
 
     ```console
     terraform version
