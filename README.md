@@ -3,7 +3,7 @@
 
 ## 1. Launch AWS CloudShell
 
-   Refer to [***AWS CloudShell***](https://github.com/t2yijaeho/AWS-CloudShell)
+Refer to [***AWS CloudShell***](https://github.com/t2yijaeho/AWS-CloudShell)
 
 
 ## 2. Install Terraform
